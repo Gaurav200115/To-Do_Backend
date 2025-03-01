@@ -17,7 +17,7 @@ app.use('/user', router)
 
 app.use('/task' , taskrouter)
 
-app.listen(8001 ,'0.0.0.0' ,()=>{
-    console.log("server running at 8001")
-})
+app.listen(process.env.PORT || 8001, () => {
+    console.log(`Server running on port ${process.env.PORT || 8001}`);
+});
 
