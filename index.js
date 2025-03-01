@@ -15,6 +15,9 @@ app.use(express.json());
 
 app.use('/user', router)
 
+app.get("/", (req, res) => {
+    res.send("Server is running!");
+});
 app.use('/task' , taskrouter)
 
 app.listen(process.env.PORT || 8001, () => {
