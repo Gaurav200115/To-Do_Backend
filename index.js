@@ -5,8 +5,7 @@ const taskrouter = require("./routes/task")
 const router = require("./routes/auth")
 const cors = require("cors");
 
-
-connecttoDb("mongodb://127.0.0.1:27017/To-Do");
+connecttoDb("mongodb+srv://devsort1510:Gaurav1510@cluster0.4jw1l.mongodb.net/To-Do");
 
 app.use(cors());
 
